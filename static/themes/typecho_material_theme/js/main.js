@@ -14,41 +14,40 @@ $(document).ready($.get("/cdn-cgi/trace",
     $("#cdn").text(data.match(/(colo=?)(\S*)/)[2]);
   }))
 
-//显示加载中提示    
-$(document).scroll(function () {
-  var before = $(document).scrollTop();
-  var window_width = $(window).width();
-  $(document).scroll(function () {
-    var after = $(document).scrollTop();
-    if (before < after - 100) {
-      if (window_width > 991) {
-        $('.navbar').css({
-          "transform": 'translateY(-71px)',
-          "transition": 'all 0.25s',
-        });
-      } else if (window_width <= 991 && window_width >= 762) {
-        $('.navbar').css({
-          "transform": 'translateY(-109px)',
-          "transition": 'all 0.25s',
-        });
-      } else {
-        $('.navbar').css({
-          "transform": 'translateY(-60px)',
-          "transition": 'all 0.25s',
-        });
-      }
-      before = after;
-    };
-
-    if (before - 100 > after) {
-      $('.navbar').css({
-        "transform": 'translateY(0px)',
-        "transition": 'all 0.25s',
-      });
-      before = after;
-    };
-  });
-});
+//鼠标滚轮向下 导航栏隐藏 性能问题 已废弃   
+// $(document).scroll(function () {
+//   var before = $(document).scrollTop();
+//   var window_width = $(window).width();
+//   $(document).scroll(function () {
+//     var after = $(document).scrollTop();
+//     if (before < after - 100) {
+//       if (window_width > 991) {
+//         $('.navbar').css({
+//           "transform": 'translateY(-71px)',
+//           "transition": 'all 0.25s',
+//         });
+//       } else if (window_width <= 991 && window_width >= 762) {
+//         $('.navbar').css({
+//           "transform": 'translateY(-109px)',
+//           "transition": 'all 0.25s',
+//         });
+//       } else {
+//         $('.navbar').css({
+//           "transform": 'translateY(-60px)',
+//           "transition": 'all 0.25s',
+//         });
+//       }
+//       before = after;
+//     };
+//     if (before - 100 > after) {
+//       $('.navbar').css({
+//         "transform": 'translateY(0px)',
+//         "transition": 'all 0.25s',
+//       });
+//       before = after;
+//     };
+//   });
+// });
 
 //向下滚动导航栏隐藏
 function nav_display() {
@@ -133,6 +132,7 @@ document.addEventListener('pjax:complete', function () {
 });
 
 // 开始 PJAX请求 执行的函数
+//显示加载中提示 
 document.addEventListener('pjax:send', function () {
   document.getElementById('loading-status').innerHTML = "正在加载，请稍后...",
     $('.loading-status').css({
