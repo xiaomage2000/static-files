@@ -101,7 +101,7 @@ var pjax = new Pjax({
     ".footer-nav",
   ],
   cacheBust: false,
-  timeout: 20000,
+  timeout: 60000,
 });
 
 //Pjax重载函数或加载完成执行的函数
