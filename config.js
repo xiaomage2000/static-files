@@ -13,7 +13,7 @@ window.Config = {
     'm783164825-f1500f2b44408fa1b0685a1f',//main
     'm783164881-bef5a6635e49d87fa104179a',//blog
     'm783164885-b94c3b94fcc051f5af51b9e8',//lab
-    'm783908908-46f7ce6a6285c669eff442a9',//v2ray源
+//    'm783908908-46f7ce6a6285c669eff442a9',//v2ray源
   ],
 
   // 是否显示监测站点的链接
