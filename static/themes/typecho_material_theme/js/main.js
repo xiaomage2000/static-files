@@ -14,51 +14,16 @@ $(document).ready($.get("/cdn-cgi/trace",
     $("#cdn").text(data.match(/(colo=?)(\S*)/)[2]);
   }))
 
-//鼠标滚轮向下 导航栏隐藏 性能问题 已废弃   
-// $(document).scroll(function () {
-//   var before = $(document).scrollTop();
-//   var window_width = $(window).width();
-//   $(document).scroll(function () {
-//     var after = $(document).scrollTop();
-//     if (before < after - 100) {
-//       if (window_width > 991) {
-//         $('.navbar').css({
-//           "transform": 'translateY(-71px)',
-//           "transition": 'all 0.25s',
-//         });
-//       } else if (window_width <= 991 && window_width >= 762) {
-//         $('.navbar').css({
-//           "transform": 'translateY(-109px)',
-//           "transition": 'all 0.25s',
-//         });
-//       } else {
-//         $('.navbar').css({
-//           "transform": 'translateY(-60px)',
-//           "transition": 'all 0.25s',
-//         });
-//       }
-//       before = after;
-//     };
-//     if (before - 100 > after) {
-//       $('.navbar').css({
-//         "transform": 'translateY(0px)',
-//         "transition": 'all 0.25s',
-//       });
-//       before = after;
-//     };
-//   });
-// });
-
 //向下滚动导航栏隐藏
 function nav_display() {
   var window_width = $(window).width();
   var nav_marks = document.getElementsByName("nav-mark");
   if (window_width > 762) {
-    for (var i = 0; i < (nav_marks.length - 1); i++) {
+    for (var i = 0; i <= (nav_marks.length - 1); i++) {
       nav_marks[i].setAttribute("data-toggle", "");
     }
   } else {
-    for (var i = 0; i < (nav_marks.length - 1); i++) {
+    for (var i = 0; i <= (nav_marks.length - 1); i++) {
       nav_marks[i].setAttribute("data-toggle", "collapse");
     }
   }
