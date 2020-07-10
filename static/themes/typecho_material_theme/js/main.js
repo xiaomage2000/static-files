@@ -130,43 +130,4 @@ document.addEventListener('pjax:error', function () {
   NProgress.done();
 });
 
-//华为温馨提示
-// function setCookie(cname, cvalue, exdays) {
-//   var d = new Date();
-//   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-//   var expires = "expires=" + d.toGMTString();
-//   document.cookie = cname + "=" + cvalue + "; " + expires;
-// }
-// function getCookie(cname) {
-//   var name = cname + "=";
-//   var ca = document.cookie.split(';');
-//   for (var i = 0; i < ca.length; i++) {
-//     var c = ca[i].trim();
-//     if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-//   }
-//   return "";
-// }
-// window.onload = function () {
-//   var isOKnull = false;
-//   var isHuawei = false;
-//   var isOK = false;
-//   if(getCookie("isHuaWeichecked")=="") {
-//     isOKnull = true;
-//   } else if(getCookie("isHuaWeichecked")=="true") {
-//     isOK = true;
-//   } else {
-//     isOK = false;
-//   }
-//   var userAgentString = navigator.userAgent;
-//   if(userAgentString.indexOf("HUAWEI")!=-1||userAgentString.indexOf("HONOR")!=-1) {
-//     isHuawei = true;
-//   }
-//   if(isHuawei==true&isOK==false) {
-//     $('#huaweiShow').modal('show');
-//     console.log("展示提示");
-//   }
-//   if(isOKnull==true) {
-//     setCookie("isHuaWeichecked","true",30);
-//     console.log("设置cookies");
-//   } 
-// }
+console.log("\n          ▌▒█           ▄▀▒▌\n          ▌▒▒▀▄        ▀▒▒▒▐\n         ▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐\n       ▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐\n     ▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▐\n    ▐▒▒▒▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▒▌\n    ▌▒▒▐▄█▀▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐\n   ▐▒▒▒▒▒▒▒▒▒▒▒▌██▀▒▒▒▒▒▒▒▒▀▄▌\n   ▌▒▀▄██▄▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌\n   ▌▀▐▄█▄█▌▄▒▀▒▒▒▒▒▒░░░░░░▒▒▒▐\n  ▐▒▀▐▀▐▀▒▒▄▄▒▄▒▒▒  Xiaomage ▒▌\n  ▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒░░░░░░▒▒▒▐\n   ▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌\n   ▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐\n    ▀▄ blog.xmgspace.me ▄▒▒▒▌\n      ▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀\n     ▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀\n    ▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀\n当你看源代码时，源代码也同样也在看着你[doge]");
