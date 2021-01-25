@@ -13,8 +13,8 @@ window.Config = {
     'm783164825-f1500f2b44408fa1b0685a1f',//main
     'm783164881-bef5a6635e49d87fa104179a',//blog
     'm783164885-b94c3b94fcc051f5af51b9e8',//bbx
+    'm787018049-8c2fc4568401d64ef8e7efd1',//tencent
     'm786305202-d55555945ffaf60a1c800a18',//akko
-    'm786305205-a5229a608c92b6f29d4e4b2d',//rn
     'm786334542-b0751f90f2a7339812d9eb46', //olink
   ],
 
