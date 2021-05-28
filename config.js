@@ -20,8 +20,8 @@ window.Config = {
     'm783164881-bef5a6635e49d87fa104179a',//blog
     'm783164885-b94c3b94fcc051f5af51b9e8',//bbx
     'm787018049-8c2fc4568401d64ef8e7efd1',//tencent
-    'm786305202-d55555945ffaf60a1c800a18',//akko
-    'm786334542-b0751f90f2a7339812d9eb46', //olink
+     'm786334542-b0751f90f2a7339812d9eb46', //olink
+    'm788150719-eab95bef74cebf9bc9834269',//pigyun
   ],
 
   // 是否显示监测站点的链接
